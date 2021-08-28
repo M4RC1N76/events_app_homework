@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Event Agenda</h1>
+
+    <div class="main">
+    <form action="/" method="post">
+        
+        <label for="date">Date</label><br>
+        <input type="date" name="date" id="date"><br>
+
+        <label for="name">Name of Event</label><br>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="guest">Number of Guests</label><br>
+        <input type="number" name="guest" id="guest"><br>
+
+        <label for="location">Room Location</label><br>
+        <input type="text" name="location" id="location"><br>
+        
+        <label for="description">Description</label><br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Add Event"><br>
+        
+    </form>
+    
+    <div id="eventsList">
+        {% for event in agenda %}
+        <div>
+            <p>{{ event.date }}: <br>
+                {{ event.name_of_event }} <br>
+                {{ event.number_of_guests }} <br>
+                {{ event.room_location }} <br>
+                {{ event.description }}
+
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+    </div>    
+{% endblock content %}

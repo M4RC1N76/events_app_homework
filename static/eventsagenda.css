@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('https://storage.needpix.com/thumbs/spotlight-background-1493135135i5S.jpg');
+    background-size: cover;
+    background-color: #eee;
+    color: white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1 {
+    text-align:top;
+    background-color:black;
+    color: white
+}
+
+p {
+    width: 350px;
+}
+
+form {
+    padding: 0px 50px;
+}
+
+ul > li > a {
+    color: white;
+    font-size:25px;
+}

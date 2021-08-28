@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> {{ title }} - Events Agenda </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='eventsagenda.css') }}">
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+        </ul>
+        <hr>
+        <hr>
+        {% block content %}
+            
+        {% endblock content %}
+    </body>
+</html>
